@@ -13,14 +13,22 @@ datasets:
       driver_params: {}
     
   cleaned:
-    sod:
+    opt_data:
       type: ds
       format: parquet
-      uri: ${core.data_base_path}/cleaned/opportunity_datas/Spring_Oppty_Data.parquet
-    spd:
+      uri: ${core.data_base_path}/cleaned/opt_data.csv
+    prd_data:
       type: ds
       format: parquet
-      uri: ${core.data_base_path}/cleaned/opportunity_datas/springboard_illst_prd_dat.parquet
+      uri: ${core.data_base_path}/cleaned/prd_data.csv
+
+  processed:
+    merged_df:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/processed/merged_df.csv
+
+     
   # cleaned:
   #   sod:
   #     type: ds
@@ -31,5 +39,5 @@ datasets:
   #   spd:
   #     type: ds
   #     format: parquet
-  #     uri: ${core.data_base_path}/cleaned/attrition/springboard_illst_prd_dat.parquet
+  #     uri: ${core.data_base_path}/cleaned/opportunity_datas/springboard_illst_prd_dat.parquet
   #     driver_params: {}
