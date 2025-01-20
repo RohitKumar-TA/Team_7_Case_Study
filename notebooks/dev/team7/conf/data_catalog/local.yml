@@ -27,8 +27,35 @@ datasets:
       type: ds
       format: parquet
       uri: ${core.data_base_path}/processed/merged_df.csv
+      
+    premodel:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/processed/premodel.csv
 
-     
+  train:
+    attrition:
+      features:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/train/attrition/features.csv   
+      target:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/train/attrition/target.csv 
+
+  test:
+    attrition:
+      features:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/test/attrition/features.csv   
+      target:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/test/attrition/target.csv 
+
+      
   # cleaned:
   #   sod:
   #     type: ds
