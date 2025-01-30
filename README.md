@@ -1,8 +1,10 @@
-# Churn prediction
+# Product prediction
 
-Use classification to predict the event of attrition/churn for a customer
+Use classification to predict the event of opportunity of a product
 
-Tip: If you don't have markdown viewer like atom, you can render this on chrome by following [this link](https://imagecomputing.net/damien.rohmer/teaching/general/markdown_viewer/index.html).
+## Notebooks Location
+
+The notebooks data_discovery,data_processing,hypotesis_testing,EDA,feature_engineering,model_experimenting are present inside the path TEAM_7_CASE_STUDY/notebboks/dev/team7
 
 # Pre-requisites
 
@@ -230,7 +232,5 @@ To set up the environment in a cloud setting, you can refer to the following lin
     -t STRING, --token=STRING
     ```
 
-# Frequently Asked Questions
 
-The FAQ for code templates during setting up, testing, development and adoption phases are available
-[here](https://tigeranalytics-code-templates.readthedocs-hosted.com/en/latest/faq.html)
+
